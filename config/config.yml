@@ -1,0 +1,49 @@
+# ------------------- General Options -------------------------
+results_root_dir             : results
+dataset                      : nba
+
+# ------------------- Dataset -------------------------
+past_frames                  : 10
+future_frames                : 20
+min_past_frames              : 10
+min_future_frames            : 20
+
+motion_dim                   : 2
+forecast_dim                 : 2
+
+traj_mean                    : [14, 7.5]
+traj_scale                   : 5
+
+# ------------------- Model -------------------------
+model                        : './checkpoints/model_0100.p'
+
+diffusion                    : {
+  steps                      : 100,
+  beta_start                 : 1.e-4,
+  beta_end                   : 5.e-2,
+  beta_schedule              : 'linear'
+}
+
+
+classifier_diffusion         :  {
+  w                          : 0.4
+}
+game_factor                  : 0.001
+gamma                        : 4.0
+cls_rate                     : 100
+
+
+# ------------------- Training Parameters -------------------------
+lr                           : 0.002
+train_batch_size             : 10
+test_batch_size              : 100
+num_epochs                   : 100
+
+epoch_continue               : 0
+model_save_dir               : './results/models'
+
+lr_scheduler                 : 'step'
+decay_step                   : 32
+decay_gamma                  : 0.9
+
+test_interval                : 2
