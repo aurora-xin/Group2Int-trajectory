@@ -30,6 +30,10 @@ b. We extended the human annotations of team-level tactics for trajectory and ta
 
 
 ## Train and Eval <a name="train-and-eval"></a>
+You can simply run the following code to start evaluation.
+```
+python main.py --train 0
+```
 **TODO:** Code/Models will be provided here.
 
 
