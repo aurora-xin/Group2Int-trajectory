@@ -15,14 +15,15 @@ Effective modeling of group interactions and dynamic semantic intentions is cruc
 4. [Citation](#citation)
 
 ## News <a name="news"></a>
-**[20 Dec, 2024]** We have released the Arxiv version of the paper. Code/Models are coming soon. Please stay tuned! 
+**[20 Dec, 2024]** We released the Arxiv version of the paper. Code/Models are coming soon. Please stay tuned! 
+**[25 Dec, 2024]** We released our training and evaluation code.
 
 ## Data Preparation <a name="data-prep"></a>
 
 a. We extracted and processed data from the [NBA SportsVU dataset](https://github.com/linouk23/NBA-Player-Movements
 ). 
 
-b. We extended th human annotations of team-level tactics for trajectory and tactic prediction tasks.
+b. We extended the human annotations of team-level tactics for trajectory and tactic prediction tasks.
 
 **TODO:** The extended dataset will be available once the paper is accepted. Stay tuned!
 
